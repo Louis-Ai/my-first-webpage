@@ -1,6 +1,7 @@
 body {
     background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
     font-family: 'Montserrat';
+    margin: 0;
 }
 
 nav {
@@ -44,7 +45,6 @@ nav {
 
 .item-flex-right {
     flex: 30%;
-    margin-left: 24px;
 }
 
 #github {
@@ -69,11 +69,13 @@ nav {
 #about-me {
     text-align: center;
     border-top: 1px solid plum;
+    margin: 30px;
 }
 
 #work {
     border-top: 1px solid plum;
     text-align: center;
+    margin: 10px;
 }
 
 .work-container {
@@ -106,10 +108,12 @@ footer {
     text-align: center;
 }
 
+/* Changes for smaller screens */
+
 @media (max-width: 800px) {
 
     .container-flex,
-    nav {
+    nav, .work-container {
         flex-direction: column;
     }
 
